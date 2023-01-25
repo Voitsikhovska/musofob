@@ -1,13 +1,150 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="img/website-icon.png">
     <title>StreetMusic</title>
     <link rel="website icon" type="png" href="app/img/8102581.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="contacts.css">
 </head>
+
 <body>
-    
+    <div class="wrapper">
+
+        <div class="header">
+            <img src="app/img/Рисунок1.png">
+            <h></h>
+            <h></h>
+            <a href="index.html">
+              <li>Головна</li>
+            </a>
+            <a href="singers.html">
+              <li>Музиканти</li>
+            </a>
+            <a href="contacts.html">
+              <li>Про нас</li>
+            </a>
+            </a>
+            <a href="https://t.me/musofob"><img src="app/img/pngegg (1) 2.png" style="height: 90px;left:1150px"></a>
+            <a href="https://www.instagram.com/street._music/"><img src="app/img/pngwing 2.png"
+                style="height: 90px;left:603px"></a>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round" ></span>
+          </div>
+
+        <main class="main">
+            <section class="main__info">
+                <div class="container">
+                    <div class="info__inner">
+                        <h1 class="info__inner-title">
+                            Про нас
+                        </h1>
+                        <div class="info__note">
+                            <h2 class="info__note-title">
+                                Важливо!
+                            </h2>
+                            <p class="info__note-content">
+                                Підписуйтесь на наші соціальні мережі такі як Інстаграм та Телеграм, щодня публікуємо
+                                новинки
+                                <br>
+                                <br>
+                                Дізнавайтесь перші про майбутні виступи
+                            </p>
+                            <div class="info__note-btn">
+                                <h4 class="info__note-btn--title">Важливо!</h4> 
+                            </div>
+                        </div>
+                        <div class="info__inner-box">
+                            <p class="info__inner-content">
+                                Street music - перший в Україні сайт про вуличних музикантів у Львові.
+                                <br>
+                                <br>
+                                Попри війну, у перервах між майже щоденними повітряними тривогами, Львів із усіх сил намагається жити тим культурним життям, за яке його всі так люблять. На площі міста Лева повернулися вуличні музиканти.
+                                <br>
+                                 
+                                <br>
+                                
+На цьому сайті Ви можете побачити місцезнаходження майбутніх виступів, переглянути відео, та дізнатись детальну інформацію про музиканта
+                                <br>
+                               
+                            </p>
+                        </div>
+                        <img class="info__note-img" src="app/img/person-music-guitar-concert-audience-musician-51334-pxhere 2.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="container">
+                    <div class="footer__inner">
+                        <div class="footer__logo">
+                            <a class="footer__logo-item" href="#">
+                                <img src="app/img/Рисунок1.png" alt="" height="126px" width="252px">
+                            </a>
+                        </div>
+                        <nav class="footer__menu">
+                            <ul class="footer__menu-list">
+                                <li class="footer__list-item">
+                                    <a class="footer__list-link" href="#">Головна</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="footer__list-link" href="#">Музиканти</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="footer__list-link" href="#">Контакти</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="footer__social">
+                            <ul class="footer__social-list">
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link footer__social-link--instagram" href="#">Ми в
+                                        інстаграмі</a>
+                                </li>
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link footer__social-link--telegram" href="#">Ми в
+                                        телеграмі</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        let darkMode = localStorage.getItem("darkMode");
+
+if (darkMode == "true") {
+  addDarkMode();
+}
+document.querySelector(".slider").addEventListener("click", function () {
+  darkMode = localStorage.getItem("darkMode");
+  if (darkMode == "true") {
+    removeDarkMode();
+  } else {
+    addDarkMode();
+  }
+});
+
+function addDarkMode() {
+  darkMode = localStorage.setItem("darkMode", "true");
+  document.getElementsByTagName("body")[0].classList.add("darkMode");
+}
+
+function removeDarkMode() {
+  darkMode = localStorage.setItem("darkMode", "false");
+  document.getElementsByTagName("body")[0].classList.remove("darkMode");
+}
+    </script>
 </body>
+
 </html>
