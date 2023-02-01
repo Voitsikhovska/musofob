@@ -1,9 +1,11 @@
 * {
   box-sizing: border-box;
 }
+
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:700');
+
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(250, 247, 247);
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
 }
@@ -17,72 +19,92 @@ body {
 .dark-mode {
   background-color: black;
   color: white;
-  .column{
-    background-color:  #252525;
-     h,h2{
-      
+
+  .column {
+    background-color: #252525;
+
+    h,
+    h2 {
+
       color: #ffffff
     }
-     h1{
+
+    h1 {
       color: #0500FF;
       position: relative;
       font-size: 16px;
-      left:-35px;
-      top:8px;
-      
+      left: -35px;
+      top: 8px;
+
     }
-    p{
+
+    p {
       color: #ffffff;
     }
   }
-  
+
 }
+
 .darkMode {
   background-color: #000;
 }
-.darkMode .events{
-  color:#f2f2f2;
+
+.darkMode .events {
+  color: #f2f2f2;
 }
-.darkMode > .column {
-  
+
+.darkMode>.column {
+
   color: #000;
   background-color: #000;
 }
-.darkMode .column{
-  h,h2,p{
+
+.darkMode .column {
+
+  h,
+  h2,
+  p {
     color: #f2f2f2;
   }
+
   background-color: #252525;
 }
 
-.darkMode > #contacts{
+.darkMode>#contacts {
   background-color: black;
 }
-.darkMode > #fop{
+
+.darkMode>#fop {
   background-color: black;
 }
-.darkMode > #romankoval{
+
+.darkMode>#romankoval {
   background-color: black;
 }
-.darkMode > #ckaya{
+
+.darkMode>#ckaya {
   background-color: black;
 }
-.darkMode > #dragoband{
+
+.darkMode>#dragoband {
   background-color: black;
 }
-.darkMode > #dimachumak{
+
+.darkMode>#dimachumak {
   background-color: black;
 }
-.darkMode > #marianromanchuk{
+
+.darkMode>#marianromanchuk {
   background-color: black;
 }
+
 /*switcher*/
 .switch {
   position: relative;
   display: inline-block;
   width: 40px;
   height: 25px;
-  left: 620px;
+  left: 1250px;
   top: -40px;
 }
 
@@ -150,17 +172,46 @@ input:checked+.slider:before {
   background: color(#0F0F0F) //linear-gradient(#01033e, #3d0202);
     //background: #30323B;
 }
+
 .footer {
   position: absolute;
   width: 2500px;
-  height:310px;
+  height: 310px;
   left: -10px;
   top: 170px;
   background: color(#0F0F0F) //linear-gradient(#01033e, #3d0202);
     //background: #30323B;
 }
 
+.navbar {
+  position: relative;
+}
 
+.nav-links {
+  position: relative;
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: 75px;
+  left: 130px;
+  top: 0px;
+}
+
+.nav-menu {
+  position: relative;
+}
+
+.header #htg {
+  height: 90px;
+  left: 4650px;
+  top: -110px;
+}
+
+.header #hinst {
+  height: 90px;
+  left: 4350px;
+  top: -110px;
+}
 
 .header h {
   font-family: 'Montserrat', sans-serif;
@@ -177,20 +228,23 @@ input:checked+.slider:before {
   line-height: 60px;
   color: #FFFF;
 }
+
 .footer h {
   position: absolute;
   width: 159px;
   height: 60px;
   left: 260px;
   top: 37px;
-font-size: 19px;
+  font-size: 19px;
   color: #FFFF;
 }
+
 .header img {
   position: relative;
   left: 125px;
   zoom: 27%;
 }
+
 .footer img {
   position: relative;
   width: 252px;
@@ -198,7 +252,7 @@ font-size: 19px;
   left: 634px;
 }
 
-.header a {
+.nav-menu a {
   font-size: 16px;
   position: relative;
   top: -30px;
@@ -207,6 +261,7 @@ font-size: 19px;
   padding: 36px;
   line-height: 20px;
 }
+
 .footer a {
   font-size: 26px;
   position: relative;
@@ -216,11 +271,15 @@ font-size: 19px;
   padding: 36px;
   line-height: 20px;
 }
-  #insta {
- position: relative;
- top: 100px;
- left: -230px;
+
+#insta {
+  height: 25px;width:25px;left:-70px;top:5px;
 }
+
+#instag {
+  height: 25px;width:25px;left:-70px;top:5px;
+}
+
 .header button {
   position: relative;
   left: 350px;
@@ -238,12 +297,13 @@ font-size: 19px;
   gap: 16px;
   box-shadow: #3d0202 0px 8px 24px;
 }*/
-.header li {
+.nav-links li {
   font-family: 'Montserrat', sans-serif;
   position: relative;
   font-size: 18px;
   left: -70px;
 }
+
 .footer li {
   font-family: 'Montserrat', sans-serif;
   position: relative;
@@ -375,7 +435,7 @@ li:hover::after {
 
 /* column */
 .column {
-background-color: #FFFFFF;
+  background-color: #FFFFFF;
 
   position: relative;
   top: 150px;
@@ -383,16 +443,17 @@ background-color: #FFFFFF;
   left: 0px;
   width: 348px;
   padding: 5px;
-  padding-inline: 40px;;
+  padding-inline: 40px;
+  ;
   height: 346px;
   margin-top: 90px;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   border-top-left-radius: 10px;
-  border-top-right-radius:10px;
+  border-top-right-radius: 10px;
   border-color: 100px;
   margin-left: 100px;
-  
+
 }
 
 /* Clear floats after the columns */
@@ -407,37 +468,40 @@ background-color: #FFFFFF;
   height: 206px;
   width: 348px;
   left: -40px;
-  top:-5px;
+  top: -5px;
 }
 
 .column h2 {
   position: relative;
   font-size: 16px;
-  left:40px;
-  top:-85px;
+  left: 40px;
+  top: -85px;
 }
 
-.column  p{
+.column p {
   position: relative;
   font-size: 13px;
-  left:40px;
-  top:-90px;
+  left: 40px;
+  top: -90px;
 }
-.column h{
+
+.column h {
   position: relative;
-  left:-23px;
-  top:8px;
+  left: -23px;
+  top: 8px;
   font-size: 34px;
   color: #000000
 }
-.column h1{
+
+.column h1 {
   color: #0500FF;
   position: relative;
   font-size: 16px;
-  left:-35px;
-  top:8px;
-  
+  left: -35px;
+  top: 8px;
+
 }
+
 // search
 
 /*#list {
@@ -489,17 +553,22 @@ input[type=text] {
 }*/
 
 
-
+.institg{
+  position: relative;
+  left: 255px;
+  top: -20px;
+}
 
 .container {
   position: absolute;
   margin: auto;
-  top:-1600px;
+  top: -1600px;
   left: 150;
   right: 0;
   bottom: 0;
   width: 300px;
   height: 100px;
+
   .search {
     position: absolute;
     margin: auto;
@@ -514,10 +583,12 @@ input[type=text] {
     transition: all 1s;
     z-index: 4;
     box-shadow: 0 0 25px 0 rgba(67, 3, 86, 0.4);
+
     // box-shadow: 0 0 25px 0 crimson;
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
+
     &::before {
       content: "";
       position: absolute;
@@ -532,6 +603,7 @@ input[type=text] {
       transform: rotate(45deg);
       transition: all .5s;
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -547,6 +619,7 @@ input[type=text] {
       transition: all .5s;
     }
   }
+
   input {
     font-family: 'Inconsolata', monospace;
     position: absolute;
@@ -566,30 +639,35 @@ input[type=text] {
     padding: 0 80px 0 20px;
     border-radius: 30px;
     box-shadow: 0 0 25px 0 rgb(30, 6, 135),
-                0 20px 25px 0 rgba(0, 0, 0, 0.2);
+      0 20px 25px 0 rgba(0, 0, 0, 0.2);
     // box-shadow: inset 0 0 25px 0 rgba(0, 0, 0, 0.5);
     transition: all 1s;
     opacity: 0;
     z-index: 5;
     font-weight: bolder;
     letter-spacing: 0.1em;
+
     &:hover {
       cursor: pointer;
     }
+
     &:focus {
       width: 270px;
       opacity: 1;
       cursor: text;
     }
-    &:focus ~ .search {
+
+    &:focus~.search {
       right: -200px;
       background: #151515;
       z-index: 6;
+
       &::before {
         top: 0;
         left: 0;
         width: 25px;
       }
+
       &::after {
         top: 0;
         left: 0;
@@ -601,6 +679,7 @@ input[type=text] {
         transform: rotate(-45deg);
       }
     }
+
     &::placeholder {
       color: white;
       opacity: 0.5;
@@ -609,7 +688,7 @@ input[type=text] {
   }
 }
 
-.row a{
+.row a {
   text-decoration: none;
   color: #000;
 }
@@ -617,7 +696,7 @@ input[type=text] {
 @media only screen and (max-width: 800px) {
 
   .body {
-
+    font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
   }
 
@@ -631,9 +710,16 @@ input[type=text] {
 
   }
 
+  .switch {
+    position: relative;
+    float: right;
+    left: -100px;
+  }
+
   .header a {
     position: relative;
     padding: 10px;
+
   }
 
   .header li {
@@ -641,9 +727,15 @@ input[type=text] {
     background-color: #000000;
     position: relative;
     font-size: 12px;
-    left: -385px;
-    top:25px;
+    left: -500px;
+    top: 25px;
   }
+.switch{
+  position: relative;
+  zoom: 70%;
+  left: -10px;
+  top: 30px;
+}
 
   li::after {
     content: ' ';
@@ -665,24 +757,356 @@ input[type=text] {
 
   .header img {
     zoom: 15%;
-    top: 95px;
+    top: 85px;
+    left: 40px;
   }
-  
+  .slideshow-container {
+    position: relative;
+    width: 450px;
+    left: -8px;
+    margin: 0em;
+    top: 67px;
+  }
+
+  .navbar {
+    position: absolute;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .navbar .nav-links ul {
+    display: flex;
+  }
+
+  .navbar .nav-links ul li {
+    margin: 0 25px;
+  }
+
+  .navbar .nav-links ul li.active a {
+    color: #ed3c57;
+    font-weight: 600;
+  }
+
+  .navbar a {
+    color: white;
+  }
+
+  .navbar .menu-hamburger {
+    display: none;
+    color: white;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+  .column {
+    position: relative;
+    top: 150px;
+    float: left;
+    left: 0px;
+    width: 178px;
+    padding: 5px;
+    padding-inline: 70px;
+    ;
+    height: 190px;
+    margin-top: 15px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-color: 100px;
+    margin-left: 4px;
+
+
+  }
+
+  .column img {
+    position: relative;
+    left: -70px;
+    height: 105px;
+    width: 178px;
+
+  }
+
+  .column h2 {
+    position: relative;
+    font-size: 7px;
+    left: -20px;
+    top: -50px;
+    width: 150px;
+  }
+
+  .column p {
+    position: relative;
+    font-size: 7px;
+    left: -23px;
+    top: -50px;
+    width: 130px;
+    margin-left: 5px;
+  }
+
+  .column h {
+    position: relative;
+    left: -53px;
+    top: 8px;
+    font-size: 20px;
+    color: #000000
+  }
+
+  .column h1 {
+    color: #0500FF;
+    position: relative;
+    font-size: 10px;
+    left: -65px;
+    top: 8px;
+
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .events {
+    position: relative;
+    top: 640px;
+  }
+
+  .events h2 {
+    //font-family: sans-serif;
+    font-size: 16px;
+
+    position: relative;
+    top: -1200px;
+    left: 35px;
+  }
+
+  .container {
+    position: absolute;
+    margin: auto;
+    top: -2400px;
+    left: 150px;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 50px;
+
+    .search {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      background: rgb(90, 42, 122);
+      border-radius: 50%;
+      transition: all 1s;
+      z-index: 4;
+      box-shadow: 0 0 25px 0 rgba(67, 3, 86, 0.4);
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        margin: auto;
+        top: 11px;
+        right: 0;
+        bottom: 0;
+        left: 14px;
+        width: 7px;
+        height: 2px;
+        background: rgb(255, 255, 255);
+        transform: rotate(45deg);
+        transition: all .5s;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        margin: auto;
+        top: -5px;
+        right: 0;
+        bottom: 0;
+        left: -5px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 2px solid white;
+        transition: all .5s;
+      }
+    }
+
+    input {
+      font-family: 'Inconsolata', monospace;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      max-width: 180px;
+      height: 30px;
+      outline: none;
+      border: none;
+      // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgb(141, 66, 191);
+      color: white;
+      text-shadow: 0 0 10px crimson;
+      padding: 0 10px 0 10px;
+      border-radius: 30px;
+      box-shadow: 0 0 25px 0 rgb(30, 6, 135),
+        0 20px 25px 0 rgba(0, 0, 0, 0.2);
+      // box-shadow: inset 0 0 25px 0 rgba(0, 0, 0, 0.5);
+      transition: all 1s;
+      opacity: 0;
+      z-index: 5;
+      font-weight: bolder;
+      letter-spacing: 0.1em;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:focus {
+        width: 250px;
+        opacity: 1;
+        cursor: text;
+      }
+
+      &:focus~.search {
+        right: -150px;
+        background: #151515;
+        z-index: 6;
+
+        &::before {
+          top: 0;
+          left: 0;
+          width: 25px;
+        }
+
+        &::after {
+          top: 0;
+          left: 0;
+          width: 25px;
+          height: 2px;
+          border: none;
+          background: white;
+          border-radius: 0%;
+          transform: rotate(-45deg);
+        }
+      }
+
+      &::placeholder {
+        color: white;
+        opacity: 0.5;
+        font-weight: bolder;
+      }
+    }
+  }
+
+  #ckaya {
+    position: relative;
+    left: 7px;
+    top: 150px;
+  }
+
+  .footer {
+    position: absolute;
+    width: 2500px;
+    height: 157px;
+    left: -10px;
+    top: -450px;
+    background: color(#0F0F0F) //linear-gradient(#01033e, #3d0202);
+      //background: #30323B;
+  }
+
+  .footer h {
+    position: absolute;
+    width: 159px;
+    height: 60px;
+    left: 60px;
+    top: 37px;
+    font-size: 19px;
+    color: #FFFF;
+  }
+
+
+  .footer img {
+    position: relative;
+    width: 145px;
+    height: 68px;
+    left: 27px;
+    top: 22px;
+  }
+
+
+
+  .footer a {
+    font-size: 12px;
+    position: relative;
+    top: 125px;
+    left: -20px;
+    display: inline-block;
+    padding: 6px;
+    line-height: 20px;
+  }
+
+  .footer li {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    font-size: 12px;
+    left: -70px;
+    top: -77px;
+    margin: 10px;
+  }
+
+  #insta {
+    position: relative;
+    height: 15px;
+    width: 15px;
+    top: -72px;
+    left: -63px;
+
+  }
+
+  #instag {
+    position: relative;
+    top: -72px;
+    left: -63px;
+    height: 15px;
+    width: 15px;
+  }
+
+  .institg{
+    position: relative;
+    left: -95px;
+    top:-20px;
+  }
+  #insthref{
+    position: relative;
+    top: 20px;
+    left: 328px;
+  }
+  #insthref1{
+    position: relative;
+    top: 40px;
+    left: 175px;
+    
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

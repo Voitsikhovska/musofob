@@ -16,31 +16,35 @@ body {
     color: aliceblue;
 }
 
-.darkMode .info__social-link--instagram::before{
-   background-image: url("app/img/pngwing\ 5.png");
-   width: 21px;
-   height: 21px;
-   top:-3px;
+.darkMode .info__social-link--instagram::before {
+    background-image: url("app/img/pngwing\ 5.png");
+    width: 21px;
+    height: 21px;
+    top: -3px;
 }
-.darkMode .info__social-link{
+
+.darkMode .info__social-link {
     margin: 10px;
     color: white;
 }
+
 .darkMode .info__social-link--telegram:before {
     background-image: url("app/img/pngegg\ \(1\)\ 4.png");
     width: 27px;
-    height:27px;
-    left:10px;
+    height: 27px;
+    left: 10px;
     margin-left: -10px;
-    top:-6px;
+    top: -6px;
 }
 
 .darkMode {
     background-color: black;
 }
-.darkMode li{
+
+.darkMode li {
     color: white;
 }
+
 .darkMode>body {
     background-color: black;
 }
@@ -138,6 +142,27 @@ input:checked+.slider:before {
     line-height: 60px;
     color: rgb(0, 0, 0);
 }
+.institg {
+    position: relative;
+    left: 255px;
+    top: -20px;
+}
+
+#insta {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    left: -50px;
+    top: 5px;
+}
+
+#instag {
+    height: 25px;
+    width: 25px;
+    left: -50px;
+    top: 5px;
+}
+
 
 .header img {
     position: relative;
@@ -394,45 +419,49 @@ li:hover::after {
 
 
 
-   .footer{
+.footer {
     position: absolute;
     width: 2098px;
-    height:315px;
+    height: 315px;
     left: -580px;
     top: 2970px;
     background-color: #0F0F0F;
-   }
-   .footer a {
+}
+
+.footer a {
     font-size: 26px;
     position: relative;
     top: 25px;
-    left:850px;
+    left: 850px;
     display: inline-block;
     padding: 36px;
     line-height: 20px;
-  }
-  .footer li {
+}
+
+.footer li {
     font-family: 'Montserrat', sans-serif;
     position: relative;
     font-size: 20px;
     left: -50px;
-  }#insta {
+}
+
+#insta {
     position: relative;
     top: 100px;
     left: 350px;
-   }
+}
 
 li {
-    
+
     font-family: geometric sans-serif;
     display: inline-block;
     position: relative;
     color: white;
     cursor: pointer;
-  
-  }
-  
-  li::after {
+
+}
+
+li::after {
     content: ' ';
     position: absolute;
     width: 100%;
@@ -443,22 +472,272 @@ li {
     background-color: rgb(92, 0, 204);
     transform-origin: bottom center;
     transition: transform 0.25s ease-out;
-  }
-  
-  li:hover::after {
+}
+
+li:hover::after {
     transform: scaleX(1);
     transform-origin: bottom center;
-  }
-  
+}
 
-  .footer img {
+
+.footer img {
     position: relative;
     width: 252px;
     height: 126px;
     left: 1200px;
-  }
+}
+
 .container {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 15px
+}
+
+@media only screen and (max-width: 800px) {
+    .top__inner {
+        color: #000;
+        background-image: url(app/img/315080578_6248206961875615_8809576548426437180_n\ 1.png);
+        border-radius: 45px;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        zoom: 29%;
+        margin-top: 47px;
+        position: relative;
+        top: 257px;
+        left: -25px;
+    }
+
+    .top__inner-img:before {
+        content: "";
+        background-image: url(app/img/vector.svg);
+        position: absolute;
+        top: 10px;
+        left: 9px;
+        zoom: 295%;
+
+
+    }
+
+    .top__inner-img {
+        position: relative;
+        top: -50px;
+        font-size: 0px;
+        left: -40px;
+    }
+
+    .info__item-title {
+        color: #8f00ff;
+        position: relative;
+        font-size: 16px;
+        top: 15px;
+        left: -164px;
+    }
+
+    .info__item-text {
+        color: #000;
+        position: relative;
+        font-size: 12px;
+        width: 380px;
+        left: -164px;
+        top: -15px;
+
+    }
+
+    .info__item-map {
+        position: relative;
+        width: 387px;
+        height: 200px;
+        overflow: hidden;
+        left: -631px;
+        top: 180px;
+        border-radius: 30px 30px 30px 30px
+    }
+
+    #data {
+        color: #8f00ff;
+        position: relative;
+        font-size: 16px;
+        top: -145px;
+        left: -164px;
+    }
+
+    #text {
+        color: #000;
+        position: relative;
+        font-size: 12px;
+        width: 200px;
+        left: -164px;
+        top: -175px;
+    }
+
+    #location {
+        color: #8f00ff;
+        position: relative;
+        font-size: 16px;
+        top: 200px;
+        left: -617px;
+    }
+
+    #contacts {
+        color: #8f00ff;
+        position: relative;
+        font-size: 16px;
+        top: 180px;
+        left: -438px;
+        width: 200px;
+    }
+
+    .info__social-link {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000;
+        padding-left: 30px;
+        position: relative;
+        top: 160px;
+        left: -440px;
+    }
+
+    .info__social-link--instagram:before {
+        background-image: url(app/img/icons8-instagram.svg);
+        height: 20px;
+        width: 20px;
+        background-color: none;
+        left: 0px;
+        top: 0px;
+
+    }
+
+    .footer {
+        position: absolute;
+        width: 2500px;
+        height: 157px;
+        left: -10px;
+        top: -650px;
+        background: color(#0F0F0F)
+    }
+
+    .footer h {
+        position: absolute;
+        width: 159px;
+        height: 60px;
+        left: 60px;
+        top: 37px;
+        font-size: 19px;
+        color: #FFFF;
+    }
+
+
+
+
+
+
+    .footer li {
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        font-size: 12px;
+        left: -70px;
+        top: -75px;
+        margin: 10px;
+    }
+
+   
+
+
+
+    .institg {
+        position: relative;
+        left: -205px;
+        top: -140px;
+      
+    }
+
+ #insta{ 
+    position: relative;float: none;
+    left: -550px;
+       
+        height: 15px;
+        width: 15px;
+        top: -42px;
+        
+
+    }    #instag {
+        position: relative;
+        top: -72px;
+        left: -45px;
+        height: 15px;
+        width: 15px;
+    }
+    #insthref {
+        position: relative;
+        top: 140px;
+        left: 1023px;
+    }
+
+    #insthref1 {
+        position: relative;
+        top: 172px;
+        left: 870px;
+
+    }
+
+    .footer {
+        position: absolute;
+        width: 1000px;
+        height: 157px;
+        left: -580px;
+        top: 900px;
+        background-color: #0F0F0F;
+    }
+
+    .footer a {
+        font-size: 12px;
+        position: relative;
+        top: 125px;
+        left: 550px;
+        display: inline-block;
+        padding: 6px;
+        line-height: 20px;
+    }
+
+    .footer li {
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        font-size: 12px;
+        left: -50px;
+    }
+
+    #insta {
+        position: relative;
+        top: -72px;
+        left: -45px;
+    }
+
+    .video__item {
+        width: 0px;
+        height: 0px;
+        zoom: 0%;
+    }
+
+    .info__items-box--dark {
+        position: relative;
+        top: 200px;
+    }
+
+    .footer img {
+        position: relative;
+        width: 145px;
+        height: 68px;
+        left: 600px;
+        top: 22px;
+    }
+
+    .video__content {
+        width: 0%;
+        position: relative
+    }
+
+
 }
