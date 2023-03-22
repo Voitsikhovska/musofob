@@ -1,0 +1,39 @@
+.photos{
+position: relative;
+height: 400px;
+width: 1550px;
+left: -15px;
+top: 65px;
+}
+.ima{
+    position: relative;
+    top:120px;
+    color: #0f0f0f;
+    font-weight: 800;
+    font-size: 35px;
+    left: 100px;
+}
+.podia .ima{
+    position: relative;
+    top: 170px;
+    color: #0f0f0f;
+    font-weight: 800;
+    font-size: 25px;
+    left: 100px;
+}
+#mrom{
+    position: relative;
+    color: #0f0f0f;
+    top: 230px;
+    left: 100px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.video__item{
+position: relative;
+top: 1200px;
+}
+#footer{
+    position: relative;
+    top: 2000px;
+}

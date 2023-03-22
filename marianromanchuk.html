@@ -15,14 +15,22 @@
         <img src="app/img/Рисунок1.png">
         <h></h>
         <h></h>
+        <button onclick="changeLanguage('uk')" style="left:30px">
+            UK
+
+        </button>
+        <button onclick="changeLanguage('es')" style="left:30px">
+            ENG
+        </button>
+        
         <a href="index.html">
-            <li>Головна</li>
+            <li id="siteContent">Головна</li>
         </a>
         <a href="singers.html">
-            <li>Музиканти</li>
+            <li id="siteContent1">Музиканти</li>
         </a>
         <a href="contacts.html">
-            <li>Про нас</li>
+            <li id="siteContent2">Про нас</li>
         </a>
         </a>
         <a href="https://t.me/musofob"><img src="app/img/pngegg (1) 2.png" style="height: 90px;left:1150px"></a>
@@ -38,7 +46,8 @@
             <section class="top">
                 <div class="container">
                     <div class="top__inner">
-                        <a class="top__inner-img" href="index.html" style="color: rgb(255, 255, 255);">Повернутись
+                        <a id="down" class="top__inner-img" href="index.html"
+                            style="color: rgb(255, 255, 255);">Повернутись
                             назад</a>
                     </div>
                 </div>
@@ -48,10 +57,10 @@
                     <div class="info__items">
                         <div class="info__items-box">
                             <div class="info__item">
-                                <h4 class="info__item-title">Опис</h4>
-                                <p class="info__item-text">
+                                <h4 id="opucc" class="info__item-title">Опис</h4>
+                                <p id="opuc" class="info__item-text">
                                     “Вино там вже є, а мистецьку частинку доповню завтра і я. Неділя о 17:30 заграю там
-                                    свій акустичний сет, цього разу авторське” 
+                                    свій акустичний сет, цього разу авторське”
                                 </p>
                                 <br>
                                 <p class="info__item-text">
@@ -59,7 +68,7 @@
                                 </p>
                             </div>
                             <div class="info__item">
-                                <h4 class="info__item-title" id="location">Локація</h4>
+                                <h4 id="loc" class="info__item-title" id="location">Локація</h4>
                                 <div class="info__item-map">
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2572.9168356576984!2d24.024023615240818!3d49.84402013875564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add72f9bc6a89%3A0xf9783fecb4fecf1f!2z0JvRjNCy0ZbQstGB0YzQutCwINCd0LDRhtGW0L7QvdCw0LvRjNC90LAg0J7Qv9C10YDQsA!5e0!3m2!1suk!2sua!4v1672179057647!5m2!1suk!2sua"
@@ -99,7 +108,7 @@
                                 </p>
                             </div>-->
                             <div class="info__item">
-                               <!--<h4 class="info__item-title">Більше новин</h4>--> 
+                                <!--<h4 class="info__item-title">Більше новин</h4>-->
                                 <div class="info__news">
                                     <a class="info__news-item" href="#">
                                         <img src="img/info-news.svg" alt="">
@@ -114,7 +123,7 @@
                     </div>
                 </div>
             </section>
-            <section class="video">
+            <!--<section class="video">
                 <div class="video__content">
                     <div class="container">
                         <div class="video__inner">
@@ -122,33 +131,43 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>-->
         </main>
     </div>
     <div class="footer">
         <img src="app/img/Рисунок1.png">
 
         <a href="index.html">
-            <li>Головна</li>
+            <li id="gol">Головна</li>
         </a>
         <a href="singers.html">
-            <li>Музиканти</li>
+            <li id="gol1">Музиканти</li>
         </a>
         <a href="contacts.html">
-            <li>Контакти</li>
+            <li id="gol2">Контакти</li>
         </a>
         <div class="institg">
-            <a  id="insthref" href="https://www.instagram.com/street._music/"><img id="insta" src="app/img/pngwing 5.png">
-                <li>Ми в Інстаграмі</li>
+            <a id="insthref" href="https://www.instagram.com/street._music/"><img id="instagr"
+                    src="app/img/pngwing 5.png">
+                <li id="gol3">Ми в Інстаграмі</li>
             </a>
-            <a id="insthref1" href="https://t.me/musofob"><img id="instag" src="app/img/pngegg (1) 2.png"
-                 >
-                <li>Ми в Телеграмі</li>
+            <a id="insthref1" href="https://t.me/musofob"><img id="instag" src="app/img/pngegg (1) 2.png">
+                <li id="gol4">Ми в Телеграмі</li>
             </a>
         </div>
     </div>
 
-    <script>let darkMode = localStorage.getItem("darkMode");
+    <script>
+    localStorage.setItem('currentLanguage','ua');
+window.addEventListener('load', () => {
+const currentLanguage=localStorage.getItem('currentLanguage');
+const languageContent = content[currentLanguage];
+console.log("Об'єкт з текстом для сайту: ",languageContent);
+const button = document.getElementById('#gol');
+button.textContent=languageContent.gol;
+})
+    
+    let darkMode = localStorage.getItem("darkMode");
 
         if (darkMode == "true") {
             addDarkMode();
@@ -170,7 +189,293 @@
         function removeDarkMode() {
             darkMode = localStorage.setItem("darkMode", "false");
             document.getElementsByTagName("body")[0].classList.remove("darkMode");
-        }</script>
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function changeLanguage(lang) {
+            location.hash = lang;
+            location.reload();
+        }
+
+        // Define the language reload anchors
+        var language = {
+            uk: {
+                siteContent: "Головна",
+                siteContent1: "Музиканти",
+                siteContent2: "Про нас",
+                loc: "Локація",
+                opucc: "Опис",
+                opuc: "Вино там вже є, а мистецьку частинку доповню завтра і я. Неділя о 17:30 заграю там свій акустичний сет, цього разу авторське",
+                down: "Повернутися назад",
+               data:"Дата",
+               text:"Неділя 12 грудня 17:30",
+               contacts:"Контакти виконавця", 
+                gol: "Головна",
+                gol1: "Музиканти",
+                gol2: "Про нас",
+                gol3: "Ми в Інстаграмі",
+                gol4: "Ми в Телеграмі",
+
+            },
+            es: {
+                siteContent: "Home",
+                siteContent1: "Musicians",
+                siteContent2: "About us",
+                loc: "Location",
+                opucc: "Description",
+                opuc: "The wine is already there, and I will add the artistic part tomorrow. Sunday at 5:30 p.m. I will play my acoustic set there, this time an author's set",
+                down: "Return to the ",
+                data:"Data",
+               text:"Sunday 12 may 17:30",
+               contacts:"Contacts musician", 
+                gol: "Home",
+                gol1: "Musicians",
+                gol2: "About us",
+                gol3: "Our Instagram",
+                gol4: "Our Telegram",
+
+            },
+            hin: {
+                siteContent: "Principal",
+                siteContent1: "Les musiciens",
+                siteContent2: "À propos de nous",
+                loc: "loc",
+                opucc: "opucc",
+                down: "down",
+                data:"Data",
+               text:"Sunday 12 may 17:30",
+               contacts:"Contacts musician", 
+                gol: "Principal",
+                gol1: "Les musiciens",
+                gol2: "À propos de nous",
+                gol3: "Notre Instagram",
+                gol4: "Notre Telegram",
+
+            }
+
+        }
+
+        if (window.location.hash) {
+
+// Set the content of the webpage
+// depending on the hash value
+if (window.location.hash == "#es") {
+    down.textContent =
+        language.es.down;
+}
+else if (window.location.hash == "#hin") {
+    down.textContent =
+        language.hin.down;
+}
+}
+if (window.location.hash) {
+
+// Set the content of the webpage
+// depending on the hash value
+if (window.location.hash == "#es") {
+    data.textContent =
+        language.es.data;
+}
+else if (window.location.hash == "#hin") {
+    data.textContent =
+        language.hin.data;
+}
+}
+if (window.location.hash) {
+
+// Set the content of the webpage
+// depending on the hash value
+if (window.location.hash == "#es") {
+    text.textContent =
+        language.es.text;
+}
+else if (window.location.hash == "#hin") {
+    text.textContent =
+        language.hin.text;
+}
+}
+if (window.location.hash) {
+
+// Set the content of the webpage
+// depending on the hash value
+if (window.location.hash == "#es") {
+   contacts.textContent =
+        language.es.contacts;
+}
+else if (window.location.hash == "#hin") {
+    contacts.textContent =
+        language.hin.contacts;
+}
+}
+        if (window.location.hash) {
+
+            // Set the content of the webpage
+            // depending on the hash value
+            if (window.location.hash == "#es") {
+                opucc.textContent =
+                    language.es.opucc;
+            }
+            else if (window.location.hash == "#hin") {
+                opucc.textContent =
+                    language.hin.opucc;
+            }
+        }
+        if (window.location.hash) {
+
+            // Set the content of the webpage
+            // depending on the hash value
+            if (window.location.hash == "#es") {
+                opuc.textContent =
+                    language.es.opuc;
+            }
+            else if (window.location.hash == "#hin") {
+                opuc.textContent =
+                    language.hin.opuc;
+            }
+        }
+
+
+        if (window.location.hash) {
+
+            // Set the content of the webpage
+            // depending on the hash value
+            if (window.location.hash == "#es") {
+                loc.textContent =
+                    language.es.loc;
+            }
+            else if (window.location.hash == "#hin") {
+                loc.textContent =
+                    language.hin.loc;
+            }
+        }
+        if (window.location.hash) {
+
+            // Set the content of the webpage
+            // depending on the hash value
+            if (window.location.hash == "#es") {
+                siteContent.textContent =
+                    language.es.siteContent;
+            }
+            else if (window.location.hash == "#hin") {
+                siteContent.textContent =
+                    language.hin.siteContent;
+            }
+        }
+        if (window.location.hash) {
+
+            // Set the content of the webpage
+            // depending on the hash value
+            if (window.location.hash == "#es") {
+                siteContent1.textContent =
+                    language.es.siteContent1;
+            }
+            else if (window.location.hash == "#hin") {
+                siteContent1.textContent =
+                    language.hin.siteContent1;
+            }
+        }
+
+
+        if (window.location.hash) {
+
+            // Set the content of the webpage
+            // depending on the hash value
+            if (window.location.hash == "#es") {
+                siteContent2.textContent =
+                    language.es.siteContent2;
+            }
+            else if (window.location.hash == "#hin") {
+                siteContent2.textContent =
+                    language.hin.siteContent2;
+            }
+        }
+
+        if (window.location.hash) {
+
+            // Set the content of the webpage
+            // depending on the hash value
+            if (window.location.hash == "#es") {
+                gol.textContent =
+                    language.es.gol;
+            }
+            else if (window.location.hash == "#hin") {
+                gol.textContent =
+                    language.hin.gol;
+            }
+        }
+
+
+        if (window.location.hash) {
+
+            // Set the content of the webpage
+            // depending on the hash value
+            if (window.location.hash == "#es") {
+                gol1.textContent =
+                    language.es.gol1;
+            }
+            else if (window.location.hash == "#hin") {
+                gol1.textContent =
+                    language.hin.gol1;
+            }
+        }
+
+        if (window.location.hash) {
+
+            // Set the content of the webpage
+            // depending on the hash value
+            if (window.location.hash == "#es") {
+                gol2.textContent =
+                    language.es.gol2;
+            }
+            else if (window.location.hash == "#hin") {
+                gol2.textContent =
+                    language.hin.gol2;
+            }
+        }
+
+
+
+        if (window.location.hash) {
+
+            // Set the content of the webpage
+            // depending on the hash value
+            if (window.location.hash == "#es") {
+                gol3.textContent =
+                    language.es.gol3;
+            }
+            else if (window.location.hash == "#hin") {
+                gol3.textContent =
+                    language.hin.gol3;
+            }
+        }
+
+
+        if (window.location.hash) {
+
+            // Set the content of the webpage
+            // depending on the hash value
+            if (window.location.hash == "#es") {
+                gol4.textContent =
+                    language.es.gol4;
+            }
+            else if (window.location.hash == "#hin") {
+                gol4.textContent =
+                    language.hin.gol4;
+            }
+        }
+
+    </script>
 </body>
 
 </html>

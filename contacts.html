@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,131 +19,448 @@
             <img src="app/img/Рисунок1.png">
             <h></h>
             <h></h>
+            <button onclick="changeLanguage('uk')" style="left:30px">
+                UK
+
+            </button>
+            <button class="es" onclick="changeLanguage('es')" style="left:30px">
+                ENG
+            </button>
+            
             <a href="index.html">
-              <li>Головна</li>
+                <li id="siteContent">Головна</li>
             </a>
             <a href="singers.html">
-              <li>Музиканти</li>
+                <li id="siteContent1">Музиканти</li>
             </a>
             <a href="contacts.html">
-              <li>Про нас</li>
+                <li id="siteContent2">Про нас</li>
             </a>
             </a>
-            <a href="https://t.me/musofob"><img src="app/img/pngegg (1) 2.png" style="height: 90px;left:1150px"></a>
+            <a href="https://t.me/musofob"><img src="app/img/pngegg (1) 2.png" style="height: 90px;left:1120px"></a>
             <a href="https://www.instagram.com/street._music/"><img src="app/img/pngwing 2.png"
-                style="height: 90px;left:603px"></a>
+                    style="height: 90px;left:590px"></a>
             <label class="switch">
-              <input type="checkbox">
-              <span class="slider round" ></span>
-          </div>
+                <input type="checkbox">
+                <span class="slider round"></span>
+        </div>
 
         <main class="main">
             <section class="main__info">
                 <div class="container">
                     <div class="info__inner">
-                        <h1 class="info__inner-title">
+                        <h1 id="about" class="info__inner-title">
                             Про нас
                         </h1>
                         <div class="info__note">
-                            <h2 class="info__note-title">
+                            <h2 id="imp" class="info__note-title">
                                 Важливо!
                             </h2>
-                            <p class="info__note-content">
+                            <p id="sub" class="info__note-content">
                                 Підписуйтесь на наші соціальні мережі такі як Інстаграм та Телеграм, щодня публікуємо
                                 новинки
                                 <br>
                                 <br>
-                                Дізнавайтесь перші про майбутні виступи
+                            <p id="sub1" class="info__note-content">Дізнавайтесь перші про майбутні виступи</p>
+
                             </p>
-                            <div class="info__note-btn">
-                                <h4 class="info__note-btn--title">Важливо!</h4> 
-                            </div>
+                            <a href="#">  <div class="info__note-btn">
+                                <!--<h4 id="imp1" class="info__note-btn--title">StreetMusic</h4>-->
+                                <h4 id="imp2" class="info__note-btn--title">Instagram</h4>
+                            </div></a>
+                            <a href="#">
+                            <div id="but" class="info__note-btn">
+                                <!--<h4 id="imp1" class="info__note-btn--title">StreetMusic</h4>-->
+                                <h4 id="imp2" class="info__note-btn--title">Telegram</h4>
+                            </div></a>
+                          
                         </div>
                         <div class="info__inner-box">
-                            <p class="info__inner-content">
+                            <p id="sm" class="info__inner-content">
                                 Street music - перший в Україні сайт про вуличних музикантів у Львові.
                                 <br>
                                 <br>
-                                Попри війну, у перервах між майже щоденними повітряними тривогами, Львів із усіх сил намагається жити тим культурним життям, за яке його всі так люблять. На площі міста Лева повернулися вуличні музиканти.
-                                <br>
-                                 
-                                <br>
-                                
-На цьому сайті Ви можете побачити місцезнаходження майбутніх виступів, переглянути відео, та дізнатись детальну інформацію про музиканта
-                                <br>
-                               
+                            <p id="sm1" class="info__inner-content">Попри війну, у перервах між майже щоденними
+                                повітряними тривогами, Львів із усіх сил
+                                намагається жити тим культурним життям, за яке його всі так люблять. На площі міста Лева
+                                повернулися вуличні музиканти.</p>
+
+                            <br>
+
+                            <br>
+                            <p id="sm2" class="info__inner-content">На цьому сайті Ви можете побачити місцезнаходження
+                                майбутніх виступів, переглянути
+                                відео, та дізнатись детальну інформацію про музиканта</p>
+
+                            <br>
+
                             </p>
                         </div>
-                        <img class="info__note-img" src="app/img/person-music-guitar-concert-audience-musician-51334-pxhere 2.png" alt="">
+                        <img class="info__note-img"
+                            src="app/img/person-music-guitar-concert-audience-musician-51334-pxhere 2.png" alt="">
                     </div>
                 </div>
             </section>
         </main>
 
-        <footer class="footer">
-            <div class="footer__content">
-                <div class="container">
-                    <div class="footer__inner">
-                        <div class="footer__logo">
-                            <a class="footer__logo-item" href="#">
-                                <img src="app/img/Рисунок1.png" alt="" height="126px" width="252px">
-                            </a>
-                        </div>
-                        <nav class="footer__menu">
-                            <ul class="footer__menu-list">
-                                <li class="footer__list-item">
-                                    <a class="footer__list-link" href="#">Головна</a>
-                                </li>
-                                <li class="footer__list-item">
-                                    <a class="footer__list-link" href="#">Музиканти</a>
-                                </li>
-                                <li class="footer__list-item">
-                                    <a class="footer__list-link" href="#">Контакти</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="footer__social">
-                            <ul class="footer__social-list">
-                                <li class="footer__social-item">
-                                    <a class="footer__social-link footer__social-link--instagram" href="#">Ми в
-                                        інстаграмі</a>
-                                </li>
-                                <li class="footer__social-item">
-                                    <a class="footer__social-link footer__social-link--telegram" href="#">Ми в
-                                        телеграмі</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <div class="footer">
+            <img src="app/img/Рисунок1.png">
+
+            <a href="index.html">
+                <li id="gol">Головна</li>
+            </a>
+            <a href="singers.html">
+                <li id="gol1">Музиканти</li>
+            </a>
+            <a href="contacts.html">
+                <li id="gol2">Контакти</li>
+            </a>
+            <div class="institg">
+                <a id="insthref" href="https://www.instagram.com/street._music/"><img id="instagr"
+                        src="app/img/pngwing 5.png">
+                    <li id="gol3">Ми в Інстаграмі</li>
+                </a>
+                <a id="insthref1" href="https://t.me/musofob"><img id="instag" src="app/img/pngegg (1) 2.png">
+                    <li id="gol4">Ми в Телеграмі</li>
+                </a>
             </div>
-        </footer>
-    </div>
-    <script>
-        let darkMode = localStorage.getItem("darkMode");
+        </div>
+        <script>
+            let darkMode = localStorage.getItem("darkMode");
 
-if (darkMode == "true") {
-  addDarkMode();
-}
-document.querySelector(".slider").addEventListener("click", function () {
-  darkMode = localStorage.getItem("darkMode");
-  if (darkMode == "true") {
-    removeDarkMode();
-  } else {
-    addDarkMode();
-  }
-});
+            if (darkMode == "true") {
+                addDarkMode();
+            }
+            document.querySelector(".slider").addEventListener("click", function () {
+                darkMode = localStorage.getItem("darkMode");
+                if (darkMode == "true") {
+                    removeDarkMode();
+                } else {
+                    addDarkMode();
+                }
+            });
 
-function addDarkMode() {
-  darkMode = localStorage.setItem("darkMode", "true");
-  document.getElementsByTagName("body")[0].classList.add("darkMode");
+            function addDarkMode() {
+                darkMode = localStorage.setItem("darkMode", "true");
+                document.getElementsByTagName("body")[0].classList.add("darkMode");
+            }
+
+            function removeDarkMode() {
+                darkMode = localStorage.setItem("darkMode", "false");
+                document.getElementsByTagName("body")[0].classList.remove("darkMode");
+            }
+
+
+
+
+
+
+
+
+            function changeLanguage(lang) {
+                location.hash = lang;
+                location.reload();
+            }
+
+            // Define the language reload anchors
+            var language = {
+                uk: {
+                    siteContent: "Головна",
+                    siteContent1: "Музиканти",
+                    siteContent2: "Про нас",
+                    about: "Про нас",
+                    imp: "Важливо!",
+                    imp1: "Важливо!",
+                    sub: "Підписуйтесь на наші соціальні мережі такі як Інстаграм та Телеграм, щодня публікуємо новинки",
+                    sub1: " Дізнавайтесь перші про майбутні виступи",
+                    sm: " Street music - перший в Україні сайт про вуличних музикантів у Львові.",
+                    sm1: "Попри війну, у перервах між майже щоденними повітряними тривогами, Львів із усіх сил намагається жити тим культурним життям, за яке його всі так люблять. На площі міста Лева повернулися вуличні музиканти.",
+
+                    sm2: "На цьому сайті Ви можете побачити місцезнаходження майбутніх виступів, переглянути відео, та дізнатись детальну інформацію про музиканта",
+                    gol: "Головна",
+                    gol1: "Музиканти",
+                    gol2: "про нас",
+                    gol3: "Ми в Інстаграмі",
+                    gol4: "Ми в Телеграмі"
+
+
+
+                },
+                es: {
+                    siteContent: "Home",
+                    siteContent1: "Musicians",
+                    siteContent2: "About us",
+                    about: "About us",
+                    imp: "Important!",
+                    imp1: "Important!",
+                    sub: "Subscribe to our social networks such as Instagram and Telegram,we publish news every day",
+                    sub1: "Be the first to know about upcoming performances.",
+                    sm: " Street music - the first site in Ukraine about street musicians in Lviv.",
+                    sm1: "Despite the war, in the breaks between the almost daily air raids, Lviv is trying with all its might to live the cultural life for which everyone loves it so much. The street musicians are back on the square of the city of Leva.",
+
+                    sm2: "On this site you can see the location of upcoming performances, watch videos, and learn detailed information about the musician",
+                    gol: "Home",
+                    gol1: "Musicians",
+                    gol2: "About us",
+                    gol3: "Our Instagram",
+                    gol4: "Our Telegram"
+                },
+                hin: {
+                    siteContent: "Principal",
+                    siteContent1: "Les musiciens",
+                    siteContent2: "À propos de nous",
+                    about: "À propos de nous",
+                    imp: "Surtout!",
+                    imp1: "Surtout!",
+                    sub: "Abonnez-vous à nos réseaux sociaux tels que Instagram et Telegram, nous publions des nouvelles tous les jours",
+                    sub1: "Soyez le premier informé des performances à venir.",
+                    sm: "Musique de rue - le premier site en Ukraine sur les musiciens de rue à Lviv.",
+                    sm1: "Malgré la guerre, dans les pauses entre les raids aériens presque quotidiens, Lviv tente de toutes ses forces de vivre la vie culturelle pour laquelle tout le monde l'aime tant. Les musiciens de rue sont de retour sur la place de la ville de Leva.",
+
+                    sm2: "Sur ce site, vous pouvez voir l'emplacement des performances à venir, regarder des vidéos et obtenir des informations détaillées sur le musicien.",
+                    gol: "Principal",
+                    gol1: "Les musiciens",
+                    gol2: "À propos de nous",
+                    gol3: "Notre Instagram",
+                    gol4: "Notre Telegram"
+                }
+
+            }
+
+
+            if (window.location.hash) {
+
+                // Set the content of the webpage
+                // depending on the hash value
+                if (window.location.hash == "#es") {
+                    siteContent.textContent =
+                        language.es.siteContent;
+                }
+                else if (window.location.hash == "#hin") {
+                    siteContent.textContent =
+                        language.hin.siteContent;
+                }
+            }
+            if (window.location.hash) {
+
+                // Set the content of the webpage
+                // depending on the hash value
+                if (window.location.hash == "#es") {
+                    siteContent1.textContent =
+                        language.es.siteContent1;
+                }
+                else if (window.location.hash == "#hin") {
+                    siteContent1.textContent =
+                        language.hin.siteContent1;
+                }
+            }
+
+
+            if (window.location.hash) {
+
+                // Set the content of the webpage
+                // depending on the hash value
+                if (window.location.hash == "#es") {
+                    siteContent2.textContent =
+                        language.es.siteContent2;
+                }
+                else if (window.location.hash == "#hin") {
+                    siteContent2.textContent =
+                        language.hin.siteContent2;
+                }
+            }
+
+            if (window.location.hash) {
+
+                // Set the content of the webpage
+                // depending on the hash value
+                if (window.location.hash == "#es") {
+                    about.textContent =
+                        language.es.about;
+                }
+                else if (window.location.hash == "#hin") {
+                    about.textContent =
+                        language.hin.about;
+                }
+            }
+
+
+            if (window.location.hash) {
+
+                // Set the content of the webpage
+                // depending on the hash value
+                if (window.location.hash == "#es") {
+                    imp.textContent =
+                        language.es.imp;
+                }
+                else if (window.location.hash == "#hin") {
+                    imp.textContent =
+                        language.hin.imp;
+                }
+            }
+
+            if (window.location.hash) {
+
+                // Set the content of the webpage
+                // depending on the hash value
+                if (window.location.hash == "#es") {
+                    imp1.textContent =
+                        language.es.imp1;
+                }
+                else if (window.location.hash == "#hin") {
+                    imp1.textContent =
+                        language.hin.imp1;
+                }
+            }
+
+
+            if (window.location.hash) {
+
+                // Set the content of the webpage
+                // depending on the hash value
+                if (window.location.hash == "#es") {
+                    sub.textContent =
+                        language.es.sub;
+                }
+                else if (window.location.hash == "#hin") {
+                    sub.textContent =
+                        language.hin.sub;
+                }
+            }
+
+            if (window.location.hash) {
+
+                // Set the content of the webpage
+                // depending on the hash value
+                if (window.location.hash == "#es") {
+                    sub1.textContent =
+                        language.es.sub1;
+                }
+                else if (window.location.hash == "#hin") {
+                    sub1.textContent =
+                        language.hin.sub1;
+                }
+            }
+
+
+
+            if (window.location.hash) {
+
+                // Set the content of the webpage
+                // depending on the hash value
+                if (window.location.hash == "#es") {
+                    sm.textContent =
+                        language.es.sm;
+                }
+                else if (window.location.hash == "#hin") {
+                    sm.textContent =
+                        language.hin.sm;
+                }
+            }
+            if (window.location.hash) {
+
+                // Set the content of the webpage
+                // depending on the hash value
+                if (window.location.hash == "#es") {
+                    sm1.textContent =
+                        language.es.sm1;
+                }
+                else if (window.location.hash == "#hin") {
+                    sm1.textContent =
+                        language.hin.sm1;
+                }
+            }
+            if (window.location.hash) {
+
+                // Set the content of the webpage
+                // depending on the hash value
+                if (window.location.hash == "#es") {
+                    sm2.textContent =
+                        language.es.sm2;
+                }
+                else if (window.location.hash == "#hin") {
+                    sm2.textContent =
+                        language.hin.sm2;
+                }
+            }
+
+
+
+
+            if (window.location.hash) {
+
+// Set the content of the webpage
+// depending on the hash value
+if (window.location.hash == "#es") {
+    gol.textContent =
+        language.es.gol;
+}
+else if (window.location.hash == "#hin") {
+    gol.textContent =
+        language.hin.gol;
+}
 }
 
-function removeDarkMode() {
-  darkMode = localStorage.setItem("darkMode", "false");
-  document.getElementsByTagName("body")[0].classList.remove("darkMode");
+
+if (window.location.hash) {
+
+// Set the content of the webpage
+// depending on the hash value
+if (window.location.hash == "#es") {
+    gol1.textContent =
+        language.es.gol1;
 }
-    </script>
+else if (window.location.hash == "#hin") {
+    gol1.textContent =
+        language.hin.gol1;
+}
+}
+
+if (window.location.hash) {
+
+// Set the content of the webpage
+// depending on the hash value
+if (window.location.hash == "#es") {
+    gol2.textContent =
+        language.es.gol2;
+}
+else if (window.location.hash == "#hin") {
+    gol2.textContent =
+        language.hin.gol2;
+}
+}
+
+
+
+if (window.location.hash) {
+
+// Set the content of the webpage
+// depending on the hash value
+if (window.location.hash == "#es") {
+    gol3.textContent =
+        language.es.gol3;
+}
+else if (window.location.hash == "#hin") {
+    gol3.textContent =
+        language.hin.gol3;
+}
+}
+
+
+if (window.location.hash) {
+
+// Set the content of the webpage
+// depending on the hash value
+if (window.location.hash == "#es") {
+    gol4.textContent =
+        language.es.gol4;
+}
+else if (window.location.hash == "#hin") {
+    gol4.textContent =
+        language.hin.gol4;
+}
+}
+        </script>
 </body>
 
 </html>

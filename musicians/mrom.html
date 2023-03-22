@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="img/website-icon.png">
+    <title>StreetMusic</title>
+    <link rel="website icon" type="png" href="/app/img/8102581.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/dist/css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="/musicians/mrom.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="header">
+            <img src="/app/img/Рисунок1.png">
+            <h></h>
+            <h></h>
+            <button onclick="changeLanguage('uk')" style="left:30px">
+                UK
+
+            </button>
+            <button onclick="changeLanguage('es')" style="left:30px">
+                ENG
+            </button>
+            <button onclick="changeLanguage('hin')" style="left:30px">
+                FR
+            </button>
+            <a href="/index.html">
+                <li id="siteContent">Головна</li>
+            </a>
+            <a href="/singers.html">
+                <li id="siteContent1">Музиканти</li>
+            </a>
+            <a href="/contacts.html">
+                <li id="siteContent2">Про нас</li>
+            </a>
+            </a>
+            <a href="https://t.me/musofob"><img src="/app/img/pngegg (1) 2.png" style="height: 90px;left:1150px"></a>
+            <a href="https://www.instagram.com/street._music/"><img src="/app/img/pngwing 2.png"
+                    style="height: 90px;left:603px"></a>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+        </div>
+
+        <div class="avtor">
+            <img class="photos"
+            src="/app/img/дляав.jpg">
+            <h class="ima">МАР'ЯН РОМАНЧУК</h>
+            <div class="podia">
+                <br> <br> <br><br>
+                <h class="ima">ПРО МУЗИКАНТА</h>
+                <br>
+                
+                <p id="mrom">Надзвичайний музикант, прекрасний гітарист, а також соліст групи DiZeX. </p>
+                <br>
+                <p id="mrom">Учасник Голосу Країни 12 та захоплює своїх підписників новим проектом під назвою
+                    Griff UA.</p>
+                    <br> <br> <br><br> <br> <br><br> <br> <br><br> <br> <br>
+                    <h class="ima">ПРО ПОДІЇ</h>
+                <br>
+                
+                <p id="mrom">Надзвичайний музикант, прекрасний гітарист, а також соліст групи DiZeX. </p>
+                <br>
+                <p id="mrom">Учасник Голосу Країни 12 та захоплює своїх підписників новим проектом під назвою
+                    Griff UA.</p>
+            </div>
+            <section class="video">
+                <div class="video__content">
+                    <div class="container">
+                        <div class="video__inner">
+                            
+                            <video controls class="video__item" src="/app/video/fopfapkoler  29112022.mp4"></video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="footer"class="footer">
+            <img src="/app/img/Рисунок1.png">
+
+            <a href="/index.html">
+                <li id="gol">Головна</li>
+            </a>
+            <a href="/singers.html">
+                <li id="gol1">Музиканти</li>
+            </a>
+            <a href="/contacts.html">
+                <li id="gol2">Контакти</li>
+            </a>
+            <div class="institg">
+                <a id="insthref" href="https://www.instagram.com/street._music/"><img id="insta" src="/app/img/pngwing 5.png">
+                  <li id="gol3">Ми в Інстаграмі</li>
+                </a>
+          
+                <a id="insthref1" href="https://t.me/musofob"><img id="instag" src="/app/img/pngegg (1) 2.png">
+                  <li id="gol4">Ми в Телеграмі</li>
+                </a>
+              </div>
+        </div>
+        <script>
+            let darkMode = localStorage.getItem("darkMode");
+
+            if (darkMode == "true") {
+                addDarkMode();
+            }
+            document.querySelector(".slider").addEventListener("click", function () {
+                darkMode = localStorage.getItem("darkMode");
+                if (darkMode == "true") {
+                    removeDarkMode();
+                } else {
+                    addDarkMode();
+                }
+            });
+
+            function addDarkMode() {
+                darkMode = localStorage.setItem("darkMode", "true");
+                document.getElementsByTagName("body")[0].classList.add("darkMode");
+            }
+
+            function removeDarkMode() {
+                darkMode = localStorage.setItem("darkMode", "false");
+                document.getElementsByTagName("body")[0].classList.remove("darkMode");
+            }
+
+
+
+
+
+
+
+
+            function changeLanguage(lang) {
+                location.hash = lang;
+                location.reload();
+            }
+
+            // Define the language reload anchors
+            var language = {
+                uk: {
+                    siteContent: "Головна",
+                    siteContent1: "Музиканти",
+                    siteContent2: "Про нас",
+                    gol: "Головна",
+                    gol1: "Музиканти",
+                    gol2: "про нас",
+                    gol3: "Ми в Інстаграмі",
+                    gol4: "Ми в Телеграмі"
+
+
+
+                },
+                es: {
+                    siteContent: "Home",
+                    siteContent1: "Musicians",
+                    siteContent2: "About us",
+                   gol: "Home",
+                    gol1: "Musicians",
+                    gol2: "About us",
+                    gol3: "Our Instagram",
+                    gol4: "Our Telegram"
+                },
+                hin: {
+                    siteContent: "Principal",
+                    siteContent1: "Les musiciens",
+                    siteContent2: "À propos de nous",
+                   gol: "Principal",
+                    gol1: "Les musiciens",
+                    gol2: "À propos de nous",
+                    gol3: "Notre Instagram",
+                    gol4: "Notre Telegram"
+                }
+
+            }
+
+
+            if (window.location.hash) {
+
+                // Set the content of the webpage
+                // depending on the hash value
+                if (window.location.hash == "#es") {
+                    siteContent.textContent =
+                        language.es.siteContent;
+                }
+                else if (window.location.hash == "#hin") {
+                    siteContent.textContent =
+                        language.hin.siteContent;
+                }
+            }
+            if (window.location.hash) {
+
+                // Set the content of the webpage
+                // depending on the hash value
+                if (window.location.hash == "#es") {
+                    siteContent1.textContent =
+                        language.es.siteContent1;
+                }
+                else if (window.location.hash == "#hin") {
+                    siteContent1.textContent =
+                        language.hin.siteContent1;
+                }
+            }
+
+
+            if (window.location.hash) {
+
+                // Set the content of the webpage
+                // depending on the hash value
+                if (window.location.hash == "#es") {
+                    siteContent2.textContent =
+                        language.es.siteContent2;
+                }
+                else if (window.location.hash == "#hin") {
+                    siteContent2.textContent =
+                        language.hin.siteContent2;
+                }
+            }
+
+           
+
+            if (window.location.hash) {
+
+// Set the content of the webpage
+// depending on the hash value
+if (window.location.hash == "#es") {
+    gol.textContent =
+        language.es.gol;
+}
+else if (window.location.hash == "#hin") {
+    gol.textContent =
+        language.hin.gol;
+}
+}
+
+
+if (window.location.hash) {
+
+// Set the content of the webpage
+// depending on the hash value
+if (window.location.hash == "#es") {
+    gol1.textContent =
+        language.es.gol1;
+}
+else if (window.location.hash == "#hin") {
+    gol1.textContent =
+        language.hin.gol1;
+}
+}
+
+if (window.location.hash) {
+
+// Set the content of the webpage
+// depending on the hash value
+if (window.location.hash == "#es") {
+    gol2.textContent =
+        language.es.gol2;
+}
+else if (window.location.hash == "#hin") {
+    gol2.textContent =
+        language.hin.gol2;
+}
+}
+
+
+
+if (window.location.hash) {
+
+// Set the content of the webpage
+// depending on the hash value
+if (window.location.hash == "#es") {
+    gol3.textContent =
+        language.es.gol3;
+}
+else if (window.location.hash == "#hin") {
+    gol3.textContent =
+        language.hin.gol3;
+}
+}
+
+
+if (window.location.hash) {
+
+// Set the content of the webpage
+// depending on the hash value
+if (window.location.hash == "#es") {
+    gol4.textContent =
+        language.es.gol4;
+}
+else if (window.location.hash == "#hin") {
+    gol4.textContent =
+        language.hin.gol4;
+}
+}
+        </script>
+</body>
+
+</html>

@@ -1,13 +1,587 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="musicians.css">
+
     <link rel="website icon" type="png" href="app/img/8102581.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="singers.less">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="themes/6/mcVideoPlugin.js" type="text/javascript"></script>
+    <script src="themes/6/js-image-slider.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <title>StreetMusic</title>
 </head>
-<body>
-    
+
+<body onload="loadSearchData()">
+    <div class="header">
+        <img src="app/img/Рисунок1.png">
+
+        <button onclick="changeLanguage('uk')" style="left:30px">
+            UK
+
+        </button>
+        <button onclick="changeLanguage('es')" style="left:30px">
+            ENG
+        </button>
+        
+        <a href="index.html">
+            <li id="siteContent">Головна</li>
+        </a>
+        <a href="singers.html">
+            <li id="siteContent1">Музиканти</li>
+        </a>
+        <a href="contacts.html">
+            <li id="siteContent2">Про нас</li>
+        </a>
+        </a>
+        <a href="https://t.me/musofob"><img id="htg" src="app/img/pngegg (1) 2.png"></a>
+        <a href="https://www.instagram.com/street._music/"><img id="hinst" src="app/img/pngwing 2.png"></a>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round" onclick="myFunction()"></span>
+    </div>
+
+
+
+    <ul class="list">
+
+        <li class="list-item">
+            <a href="musicians/mrom.html">
+                <div class="container">
+                    <img src="app/img/315080578_6248206961875615_8809576548426437180_n 1.png" alt="Avatar"
+                        class="image">
+                    <div class="info">
+                        <h id="name1">Мар'ян Романчук</h>
+                        <p id="bio">Надзвичайний музикант, прекрасний гітарист, а також соліст групи DiZeX. </p>
+
+                        <p id="bio1">Учасник Голосу Країни 12 та наразі захоплює своїх підписників новим проектом під назвою
+                            Griff UA.
+                        </p>
+                    </div>
+                    <div class="middle">
+                        <div class="text">
+                            <p></p>
+                            <a href="/musicians/mrom.html" id="det">Детальніше...</a>
+                        </div>
+                    </div>
+                </div>
+
+            </a>
+        </li>
+
+
+        <li class="list-item">
+            <a href="ckayaProfile.html">
+                <div class="container">
+                    <img src="app/img/ская.png" alt="Avatar" class="image">
+                    <div class="info">
+                        <h style="position: relative; left:400px;">Ская</h>
+                        <p>Душевний вокаліст, а також ініціатор акустичних вечорів у Львові та у Києві.</p>
+
+                        <p>У найближчий час випустить свій перший альбом з патріотичними піснями</p>
+                    </div>
+                    <div class="middle">
+                        <div class="text">
+                            <p></p>
+                            <a href="ckayaProfile.html">Детальніше...</p>
+                        </div>
+                    </div>
+                </div>
+
+            </a>
+        </li>
+
+
+
+        <li class="list-item">
+            <a href="marianromanchuk.html">
+                <div class="container">
+                    <img src="app/img/fopf.png" alt="Avatar" class="image">
+                    <div class="info">
+                        <h>Дмитро Максимчук</h>
+                        <p>Дмитро Максимчук має гарний тембр та любить дарувати свій спів щирим українцям</p>
+
+                        <p>А також бере участь у різних благодійних виступах, щоб підтримати українців своїми піснями</p>
+                    </div>
+                    <div class="middle">
+                        <div class="text">
+                            <p></p>
+                            <a href="contacts.html">Детальніше...</p>
+                        </div>
+                    </div>
+                </div>
+
+            </a>
+        </li>
+
+
+
+        <li class="list-item">
+            <a href="marianromanchuk.html">
+                <div class="container">
+                    <img src="app/img/koval.png" alt="Avatar" class="image">
+                    <div class="info">
+                        <h>Максим Коваль</h>
+                        <p>Щирий музикант, який на даний момент благодійно гастролює західною Україною, даруючи дітям і дорослим душевну музику та хороший настрій </p>
+
+                        
+                    </div>
+                    <div class="middle">
+                        <div class="text">
+                            <p></p>
+                            <a href="contacts.html">Детальніше...</p>
+                        </div>
+                    </div>
+                </div>
+
+            </a>
+        </li>
+
+        <li class="list-item">
+            <a href="marianromanchuk.html">
+                <div class="container">
+                    <img src="app/img/chumak.png" alt="Avatar" class="image">
+                    <div class="info">
+                        <h>Дмитро Чумак</h>
+                        <p>Дмитро співає не просто для естетичного задоволення, а головне - для серця. </p>
+
+                        <p> Він часто виступає з Максимчуком Дмитром, музика їхнього дуету ще довго відгукується вуличками міста.</p>
+                    </div>
+                    <div class="middle">
+                        <div class="text">
+                            <p></p>
+                            <a href="contacts.html">Детальніше...</p>
+                        </div>
+                    </div>
+                </div>
+
+            </a>
+        </li>
+
+
+
+
+
+        <li class="list-item">
+            <a href="marianromanchuk.html">
+                <div class="container">
+                    <img src="app/img/band.png" alt="Avatar" class="image">
+                    <div class="info">
+                        <h>Драко Брес Бенд</h>
+                        <p>Веселий, а також інструментальний гурт, який складається з п'ятьох талановитих хлопців,
+
+                        які дуже часто зачаровують місто Лева своїми інструментами</p>
+                    </div>
+                    <div class="middle">
+                        <div class="text">
+                            <p></p>
+                            <a href="contacts.html">Детальніше...</p>
+                        </div>
+                    </div>
+                </div>
+
+            </a>
+        </li>
+
+
+
+    </ul>
+    <div class="footer">
+        <img src="app/img/Рисунок1.png">
+
+        <a href="index.html">
+            <li id="gol">Головна</li>
+        </a>
+        <a href="singers.html">
+            <li id="gol1">Музиканти</li>
+        </a>
+        <a href="contacts.html">
+            <li id="gol2">Про нас</li>
+        </a>
+        <div class="institg">
+            <a id="insthref" href="https://www.instagram.com/street._music/"><img id="insta"
+                    src="app/img/pngwing 5.png">
+                <li id="gol3">Ми в Інстаграмі</li>
+            </a>
+
+            <a id="insthref1" href="https://t.me/musofob"><img id="instag" src="app/img/pngegg (1) 2.png">
+                <li id="gol4">Ми в Телеграмі</li>
+            </a>
+        </div>
+
+    </div>
+    <!-- <li class="list-item">
+            <a href="marianromanchuk.html">
+
+                <img class="list-item--foto" src="app/img/315080578_6248206961875615_8809576548426437180_n 1.png">
+
+                <div class="list-item--box">
+                    <div class="date">
+                        <h1 class="month">грудень</h1>
+                        <h class="day">12</h>
+                    </div>
+
+                    <div class="article">
+                        <h2 class="title">Фестиваль Вина та Мистецтв</h2>
+                        <p class="description">“Вино там вже є, а мистецьку частинку доповню завтра і я. Неділя о 17:30
+                            заграю там
+                            свій акустичний сет, цього разу авторське”</p>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        <li class="list-item">
+            <a href="marianromanchuk.html">
+
+                <img class="list-item--foto" src="app/img/315080578_6248206961875615_8809576548426437180_n 1.png">
+
+                <div class="list-item--box">
+                    <div class="date">
+                        <h1 class="month">грудень</h1>
+                        <h class="day">12</h>
+                    </div>
+
+                    <div class="article">
+                        <h2 class="title">Фестиваль Вина та Мистецтв</h2>
+                        <p class="description">“Вино там вже є, а мистецьку частинку доповню завтра і я. Неділя о 17:30
+                            заграю там
+                            свій акустичний сет, цього разу авторське”</p>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+
+        <li class="list-item">
+            <a href="marianromanchuk.html">
+
+                <img class="list-item--foto" src="app/img/315080578_6248206961875615_8809576548426437180_n 1.png">
+
+                <div class="list-item--box">
+                    <div class="date">
+                        <h1 class="month">грудень</h1>
+                        <h class="day">12</h>
+                    </div>
+
+                    <div class="article">
+                        <h2 class="title">Фестиваль Вина та Мистецтв</h2>
+                        <p class="description">“Вино там вже є, а мистецьку частинку доповню завтра і я. Неділя о 17:30
+                            заграю там
+                            свій акустичний сет, цього разу авторське”</p>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+
+        <li class="list-item">
+            <a href="marianromanchuk.html">
+
+                <img class="list-item--foto" src="app/img/315080578_6248206961875615_8809576548426437180_n 1.png">
+
+                <div class="list-item--box">
+                    <div class="date">
+                        <h1 class="month">грудень</h1>
+                        <h class="day">12</h>
+                    </div>
+
+                    <div class="article">
+                        <h2 class="title">Фестиваль Вина та Мистецтв</h2>
+                        <p class="description">“Вино там вже є, а мистецьку частинку доповню завтра і я. Неділя о 17:30
+                            заграю там
+                            свій акустичний сет, цього разу авторське”</p>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+
+        <li class="list-item">
+            <a href="marianromanchuk.html">
+
+                <img class="list-item--foto" src="app/img/315080578_6248206961875615_8809576548426437180_n 1.png">
+
+                <div class="list-item--box">
+                    <div class="date">
+                        <h1 class="month">грудень</h1>
+                        <h class="day">12</h>
+                    </div>
+
+                    <div class="article">
+                        <h2 class="title">Фестиваль Вина та Мистецтв</h2>
+                        <p class="description">“Вино там вже є, а мистецьку частинку доповню завтра і я. Неділя о 17:30
+                            заграю там
+                            свій акустичний сет, цього разу авторське”</p>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+    </ul>-->
+    <script>let darkMode = localStorage.getItem("darkMode");
+
+        if (darkMode == "true") {
+            addDarkMode();
+        }
+        document.querySelector(".slider").addEventListener("click", function () {
+            darkMode = localStorage.getItem("darkMode");
+            if (darkMode == "true") {
+                removeDarkMode();
+            } else {
+                addDarkMode();
+            }
+        });
+
+        function addDarkMode() {
+            darkMode = localStorage.setItem("darkMode", "true");
+            document.getElementsByTagName("body")[0].classList.add("darkMode");
+        }
+
+        function removeDarkMode() {
+            darkMode = localStorage.setItem("darkMode", "false");
+            document.getElementsByTagName("body")[0].classList.remove("darkMode");
+        }
+
+
+
+
+
+        function changeLanguage(lang) {
+            location.hash = lang;
+            location.reload();
+        }
+
+        // Define the language reload anchors
+        var language = {
+            uk: {
+                siteContent: "Головна",
+                siteContent1: "Музиканти",
+                siteContent2: "Про нас",
+                gol: "Головна",
+                gol1: "Музиканти",
+                gol2: "Про нас",
+                gol3: "Ми в Інстаграмі",
+                gol4: "Ми в Телеграмі",
+                name1: "Мар'ян Романчук",
+                bio: "Надзвичайний музикант, прекрасний гітарист, а також соліст групи DiZeX.",
+                bio1: "Учасник Голосу Країни 12 та захоплює своїх підписників новим проектом під назвою Griff UA.",
+                det: "Детальніше..."
+            },
+            es: {
+                siteContent: "Home",
+                siteContent1: "Musicians",
+                siteContent2: "About us",
+                gol: "Home",
+                gol1: "Musicians",
+                gol2: "About us",
+                gol3: "Our Instagram",
+                gol4: "Our Telegram",
+                name1: "Marian Romanchuk",
+                bio: "An extraordinary musician, a wonderful guitarist, as well as the soloist of the DiZeX group.",
+                bio1: "Participant of Voice of the Country 12 and delights his subscribers with a new project called Griff UA.",
+                det: "More details..."
+            },
+            hin: {
+                siteContent: "Principal",
+                siteContent1: "Les musiciens",
+                siteContent2: "À propos de nous",
+                gol: "Principal",
+                gol1: "Les musiciens",
+                gol2: "À propos de nous",
+                gol3: "Notre Instagram",
+                gol4: "Notre Telegram",
+                name1: "Marian Romanchuk",
+                bio: "Un musicien extraordinaire, un merveilleux guitariste, ainsi que le soliste du groupe DiZeX.",
+                bio1: "Participant de Voice of the Country 12 et ravit ses abonnés avec un nouveau projet appelé Griff UA.",
+                det: "Plus de détails"
+            }
+
+        }
+
+
+        if (window.location.hash) {
+
+            // Set the content of the webpage
+            // depending on the hash value
+            if (window.location.hash == "#es") {
+                siteContent.textContent =
+                    language.es.siteContent;
+            }
+            else if (window.location.hash == "#hin") {
+                siteContent.textContent =
+                    language.hin.siteContent;
+            }
+        }
+        if (window.location.hash) {
+
+            // Set the content of the webpage
+            // depending on the hash value
+            if (window.location.hash == "#es") {
+                siteContent1.textContent =
+                    language.es.siteContent1;
+            }
+            else if (window.location.hash == "#hin") {
+                siteContent1.textContent =
+                    language.hin.siteContent1;
+            }
+        }
+
+
+        if (window.location.hash) {
+
+            // Set the content of the webpage
+            // depending on the hash value
+            if (window.location.hash == "#es") {
+                siteContent2.textContent =
+                    language.es.siteContent2;
+            }
+            else if (window.location.hash == "#hin") {
+                siteContent2.textContent =
+                    language.hin.siteContent2;
+            }
+        }
+
+        if (window.location.hash) {
+
+            // Set the content of the webpage
+            // depending on the hash value
+            if (window.location.hash == "#es") {
+                gol.textContent =
+                    language.es.gol;
+            }
+            else if (window.location.hash == "#hin") {
+                gol.textContent =
+                    language.hin.gol;
+            }
+        }
+
+
+        if (window.location.hash) {
+
+            // Set the content of the webpage
+            // depending on the hash value
+            if (window.location.hash == "#es") {
+                gol1.textContent =
+                    language.es.gol1;
+            }
+            else if (window.location.hash == "#hin") {
+                gol1.textContent =
+                    language.hin.gol1;
+            }
+        }
+
+        if (window.location.hash) {
+
+            // Set the content of the webpage
+            // depending on the hash value
+            if (window.location.hash == "#es") {
+                gol2.textContent =
+                    language.es.gol2;
+            }
+            else if (window.location.hash == "#hin") {
+                gol2.textContent =
+                    language.hin.gol2;
+            }
+        }
+
+
+
+        if (window.location.hash) {
+
+            // Set the content of the webpage
+            // depending on the hash value
+            if (window.location.hash == "#es") {
+                gol3.textContent =
+                    language.es.gol3;
+            }
+            else if (window.location.hash == "#hin") {
+                gol3.textContent =
+                    language.hin.gol3;
+            }
+        }
+
+
+        if (window.location.hash) {
+
+            // Set the content of the webpage
+            // depending on the hash value
+            if (window.location.hash == "#es") {
+                gol4.textContent =
+                    language.es.gol4;
+            }
+            else if (window.location.hash == "#hin") {
+                gol4.textContent =
+                    language.hin.gol4;
+            }
+        }
+        if (window.location.hash) {
+
+            // Set the content of the webpage
+            // depending on the hash value
+            if (window.location.hash == "#es") {
+                name1.textContent =
+                    language.es.name1;
+            }
+            else if (window.location.hash == "#hin") {
+                name1.textContent =
+                    language.hin.name1;
+            }
+        }
+
+        if (window.location.hash) {
+
+// Set the content of the webpage
+// depending on the hash value
+if (window.location.hash == "#es") {
+    bio.textContent =
+        language.es.bio;
+}
+else if (window.location.hash == "#hin") {
+    bio.textContent =
+        language.hin.bio;
+}
+}
+if (window.location.hash) {
+
+// Set the content of the webpage
+// depending on the hash value
+if (window.location.hash == "#es") {
+    bio1.textContent =
+        language.es.bio1;
+}
+else if (window.location.hash == "#hin") {
+    bio1.textContent =
+        language.hin.bio1;
+}
+}
+if (window.location.hash) {
+
+// Set the content of the webpage
+// depending on the hash value
+if (window.location.hash == "#es") {
+    det.textContent =
+        language.es.det;
+}
+else if (window.location.hash == "#hin") {
+    det.textContent =
+        language.hin.det;
+}
+}
+   
+   
+    </script>
+    <script src="dist/js/main.min.js"></script>
+    <script src="app/scripts/scripts.js"></script>
 </body>
+
 </html>

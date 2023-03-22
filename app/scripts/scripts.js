@@ -15,7 +15,7 @@ function showSlides() {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
-  setTimeout(showSlides, 7000); // Change image every 2 seconds
+  setTimeout(showSlides, 7000); // Change image every 7 seconds
 }
 
 /*function myFunction(sheet) {
@@ -54,44 +54,64 @@ function removeDarkMode() {
   darkMode = localStorage.setItem("darkMode", "false");
   document.getElementsByTagName("body")[0].classList.remove("darkMode");
 }
- //search
- /*function loadSearchData() {
-    // Data to be used in the searchbar
-    let countries = [
-      'Australia',
-      'Austria',
-      'Brazil',
-      'Canada',
-      'Denmark',
-      'Egypt',
-      'France',
-      'Germany',
-      'USA',
-      'Vietnam'
-    ];
-  // Get the HTML element of the list
+//search
+/*function loadSearchData() {
+   // Data to be used in the searchbar
+   let countries = [
+     'Australia',
+     'Austria',
+     'Brazil',
+     'Canada',
+     'Denmark',
+     'Egypt',
+     'France',
+     'Germany',
+     'USA',
+     'Vietnam'
+   ];
+ // Get the HTML element of the list
 let list = document.getElementById('list');
 // Add each data item as an <a> tag
 countries.forEach((country)=>{
-    let a = document.createElement("a");
-    a.innerText = country;
-    a.classList.add("listItem");
-    list.appendChild(a);
+   let a = document.createElement("a");
+   a.innerText = country;
+   a.classList.add("listItem");
+   list.appendChild(a);
 })
-  }
+ }
 
-  // Get the HTML element of the list
+ // Get the HTML element of the list
 let list = document.getElementById('list');
 // Add each data item as an <a> tag
 countries.forEach((country)=>{
-    let a = document.createElement("a");
-    a.innerText = country;
-    a.classList.add("listItem");
-    list.appendChild(a);
+   let a = document.createElement("a");
+   a.innerText = country;
+   a.classList.add("listItem");
+   list.appendChild(a);
 })*/
-const menuHamburger = document.querySelector(".menu-hamburger");
-const navLinks = document.querySelector(".nav-links");
- 
- menuHamburger.addEventListener('click',()=>{
-        navLinks.classList.toggle('mobile-menu')
-        })
+
+
+
+
+
+
+var options = {
+  valueNames: ['month', 'day', 'title', 'description']
+};
+
+var userList = new List('search', options);
+
+
+
+
+localStorage.setItem('currentLanguage','ua');
+window.addEventListener('load', () => {
+const currentLanguage=localStorage.getItem('currentLanguage');
+const languageContent = content[currentLanguage];
+console.log("Об'єкт з текстом для сайту: ",languageContent);
+const button = document.getElementById('#gol');
+button.textContent=languageContent.gol;
+})
+
+// Create a function to change
+// the hash value of the page

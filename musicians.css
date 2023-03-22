@@ -1,0 +1,171 @@
+body {
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.darkMode {
+  background-color: #000;
+}
+.darkMode>body {
+  background-color: black;
+}
+.darkMode .info p{
+  color: #f2f2f2;
+}
+.darkMode .info h{
+  color: #f2f2f2;
+}
+.darkMode .text a{
+  color: #8a50b5;
+}
+.darkMode .list-item{
+  background-color: #403e3e;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.1;
+}
+.container:hover .info {
+  opacity: 0.1;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color:none;
+ height: 15px;
+  color: white;
+  font-size: 16px;
+  left: -80px;
+ width: 210px;
+ top: 25px;
+ padding: 16px 32px;
+}
+.text p{
+  position: relative;
+  top:-5px;
+  left: 10px;
+}
+p{
+  color: #f2f2f2;
+  position: relative;
+}
+.list-item {
+  margin: 20px;
+  text-decoration: none;
+  background: #dedede;
+  width: 940px;
+  height: 246px;
+left: -30px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.list-item img {
+  position: relative;
+  left: -250px;
+  width: 400px;
+  height: 246px;
+  border-radius: 10px;
+}
+h{
+  position: relative;
+
+}
+.info{
+  position: relative;
+  width: 800px;
+}
+.info h{
+ position: relative;
+  font-size: 20px;
+ font-weight: 600;
+  
+ color: #000;
+  top: -190px;
+  left: 350px;
+
+}
+.info p{
+  position: relative;
+   font-size: 17px;
+  font-weight: 100;
+   width: 350px;
+   color: #000;
+   top: -190px;
+   left: 200px;
+ 
+ }
+.text a{
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration:dashed;
+  position: relative;
+  color: #50008d;
+  left: -25px;
+ 
+}
+.footer{
+  position: relative;
+  top: 30px;
+}
+@media only screen and (max-width: 800px) 
+{
+
+
+  .list{
+    
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 36px 58px;
+    margin-top: 95px;
+    
+    margin-left: -50px;
+  }
+  .list-item img {
+    position: relative;
+    left: -45px;
+    width: 178px;
+    height: 105px;
+  }
+  
+  .list-item{
+    border-radius: 10px;
+    top: -20px;
+    margin-right: -60px;
+    margin-left: 20px;
+    text-decoration: none;
+    background: #FFFFFF;
+    width: 178px;
+    height: 105px;
+    right: 10px;}
+
+}

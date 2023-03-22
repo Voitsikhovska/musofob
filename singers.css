@@ -4,7 +4,8 @@ html {
 }
 
 body {
-    font-family: Montserrat, sans-serif
+    font-family: Montserrat, sans-serif;
+    overflow-x: hidden;
 }
 
 .dark-mode {
@@ -52,14 +53,21 @@ body {
 .darkMode .info__item-text {
     color: white;
 }
-
+button {
+    position: relative;
+    top: -30px;
+    background-color: #0F0F0F;
+    border-color: #0F0F0F;
+    color: #f2f2f2;
+    font-size: 18px;
+}
 /*switcher*/
 .switch {
     position: relative;
     display: inline-block;
     width: 40px;
     height: 25px;
-    left: 620px;
+    left: 480px;
     top: -40px;
 }
 
@@ -128,6 +136,9 @@ input:checked+.slider:before {
 
 
 
+
+
+
 .header h {
     position: absolute;
     width: 159px;
@@ -142,14 +153,15 @@ input:checked+.slider:before {
     line-height: 60px;
     color: rgb(0, 0, 0);
 }
+
 .institg {
     position: relative;
     left: 255px;
     top: -20px;
 }
 
-#insta {
-    position: relative;
+#instagr {
+
     height: 25px;
     width: 25px;
     left: -50px;
@@ -174,7 +186,7 @@ input:checked+.slider:before {
     font-size: 16px;
     position: relative;
     top: -30px;
-    left: 429px;
+    left: 290px;
     display: inline-block;
     padding: 36px;
     line-height: 20px;
@@ -322,7 +334,14 @@ li:hover::after {
     line-height: 29px;
     margin-bottom: 30px
 }
-
+#data{
+    position: relative;
+    top: -190px;
+}
+#text{
+    position: relative;
+    top: -190px;
+}
 .info__item-text {
     color: #000;
     font-weight: 400;
@@ -360,6 +379,18 @@ li:hover::after {
     content: "";
     position: absolute;
     left: 0
+}
+
+.header #htg {
+    height: 90px;
+    left: 1150px;
+    top: 0px;
+}
+
+.header #hinst {
+    height: 90px;
+    left: 600px;
+    top: 0px;
 }
 
 .info__social-link--instagram:before {
@@ -424,7 +455,7 @@ li:hover::after {
     width: 2098px;
     height: 315px;
     left: -580px;
-    top: 2970px;
+    top: 1570px;
     background-color: #0F0F0F;
 }
 
@@ -494,6 +525,34 @@ li:hover::after {
 }
 
 @media only screen and (max-width: 800px) {
+    .header img {
+        zoom: 15%;
+        top: 85px;
+        left: 40px;
+    }
+
+    .header a {
+        position: relative;
+        padding: 10px;
+
+    }
+
+    .header li {
+
+        background-color: #000000;
+        position: relative;
+        font-size: 12px;
+        left: -430px;
+        top: 25px;
+    }
+
+    .switch {
+        position: relative;
+        zoom: 70%;
+        left: 420px;
+        top: -68px;
+    }
+
     .top__inner {
         color: #000;
         background-image: url(app/img/315080578_6248206961875615_8809576548426437180_n\ 1.png);
@@ -643,7 +702,7 @@ li:hover::after {
         margin: 10px;
     }
 
-   
+
 
 
 
@@ -651,25 +710,29 @@ li:hover::after {
         position: relative;
         left: -205px;
         top: -140px;
-      
+
     }
 
- #insta{ 
-    position: relative;float: none;
-    left: -550px;
-       
+    #instagr {
+        position: relative;
+        float: none;
+        left: -45px;
+
         height: 15px;
         width: 15px;
-        top: -42px;
-        
+        top: -72px;
 
-    }    #instag {
+
+    }
+
+    #instag {
         position: relative;
         top: -72px;
         left: -45px;
         height: 15px;
         width: 15px;
     }
+
     #insthref {
         position: relative;
         top: 140px;

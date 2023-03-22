@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="app/img/8102581.png">
+    <title>StreetMusic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="singers.css">
+    <link rel="stylesheet" href="app/styles/profile.scss">
+
+</head>
+
+<body>
+    <style>
+        
+        .top__inner {
+    color: #000;
+    background-image: url(app/img/ская.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 755px;
+    width: 1295px;
+    margin-top: 57px;
+    position: relative;
+    top:37px;
+}
+.darkMode {
+    background-color: black;
+  }
+  .darkMode > body{
+    background-color: black;
+  }
+  .darkMode .info__item-text{
+    color: white;
+  }
+  .darkMode p{
+    color: #f2f2f2;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .top__inner {
+    color: #000;
+    background-image: url(app/img/ская.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 755px;
+    width: 1295px;
+    margin-top: 47px;
+    position: relative;
+    top:257px;
+left: -25px;
+
+    
+    zoom: 29%;
+        
+}  .darkMode #text{
+    color:#f2f2f2;
+}
+
+  }
+
+    </style>
+    <div class="header">
+        <img src="app/img/Рисунок1.png">
+        <h></h>
+        <h></h>
+        <button onclick="changeLanguage('uk')" style="left:30px">
+            UK
+
+        </button>
+        <button class="es" onclick="changeLanguage('es')" style="left:30px">
+            ENG
+        </button>
+        <a href="index.html">
+            <li>Головна</li>
+        </a>
+        <a href="singers.html">
+            <li>Музиканти</li>
+        </a>
+        <a href="contacts.html">
+            <li>Про нас</li>
+        </a>
+        </a>
+        <a href="https://t.me/musofob"><img id="htg" src="app/img/pngegg (1) 2.png"></a>
+    <a href="https://www.instagram.com/street._music/"><img id="hinst"src="app/img/pngwing 2.png"
+       ></a>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round" onclick="myFunction()"></span>
+    </div>
+
+    <main class="main">
+        <section class="top">
+            <div class="container">
+                <div class="top__inner">
+                    <a class="top__inner-img" href="#" style="color: #f2f2f2;">Повернутись назад</a>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="container">
+                <div class="info__items">
+                    <div class="info__items-box">
+                        <div class="info__item">                               
+                            
+                            <section class="video">
+                                <div class="video__content" style="width: 0%;">
+                                    <div class="container">
+                                        <div class="video__inner">
+                                            <video controls class="video__item" id="video" style="position:relative;zoom: 50%; top:60px; left: 400px;" src="app/video/ckaya 12112022.mp4"></video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="info__item">
+
+                            <h4 class="info__item-title">Про виконавця</h4>
+                            <p class="info__item-text">
+                                <p>Душевний вокаліст, а також ініціатор акустичних вечорів у Львові та у Києві.</p>
+
+                                <p>У найближчий час випустить свій перший альбом з патріотичними піснями</p>
+                            </p>  
+
+                            <h4 class="info__item-title">Контакти виконавця</h4>
+                            <ul class="info__social">
+                                <li class="info__social-item">
+                                    <a class="info__social-link info__social-link--instagram"
+                                        href="https://www.instagram.com/ckqya/">@ckaya</a>
+                                </li>
+                                <!--<li class="info__social-item">
+                                    <a class="info__social-link info__social-link--telegram"
+                                        href="#"></a>
+                                </li>-->
+                            </ul>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+        <div class="footer">
+            <img src="app/img/Рисунок1.png">
+            
+            <a href="index.html">
+              <li>Головна</li>
+            </a>
+            <a href="singers.html">
+              <li>Музиканти</li>
+            </a>
+            <a href="contacts.html">
+              <li>Про нас</li>
+            </a>
+            <div class="institg">
+                <a id="insthref"href="https://www.instagram.com/street._music/"><img id="instagr" src="app/img/pngwing 5.png">
+              <li>Ми в Інстаграмі</li>
+            </a>
+            <a id="insthref1" href="https://t.me/musofob"><img id="instag" src="app/img/pngegg (1) 2.png" >
+              <li>Ми в Телеграмі</li>
+            </a>
+            </div>
+            
+       
+    
+    <script>
+        let darkMode = localStorage.getItem("darkMode");
+
+if (darkMode == "true") {
+  addDarkMode();
+}
+document.querySelector(".slider").addEventListener("click", function () {
+  darkMode = localStorage.getItem("darkMode");
+  if (darkMode == "true") {
+    removeDarkMode();
+  } else {
+    addDarkMode();
+  }
+});
+
+function addDarkMode() {
+  darkMode = localStorage.setItem("darkMode", "true");
+  document.getElementsByTagName("body")[0].classList.add("darkMode");
+}
+
+function removeDarkMode() {
+  darkMode = localStorage.setItem("darkMode", "false");
+  document.getElementsByTagName("body")[0].classList.remove("darkMode");
+}
+    </script>
+</body>
+
+</html>
